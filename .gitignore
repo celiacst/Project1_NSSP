@@ -5,3 +5,6 @@ _pycache_/
 .ipynb_checkpoints/
 
 *.pyc
+figures/
+*.nii.gz
+.ipynb_checkpoints/
