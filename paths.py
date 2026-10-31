@@ -12,7 +12,7 @@ else:
 
 # Raw data
 ANAT_PATH = op.join(DATA_ROOT, "T1", "T1w.nii.gz")
-if not op.exists(ANAT_PATH):                      # folder is called T1w in the project description
+if not op.exists(ANAT_PATH):                      
     ANAT_PATH = op.join(DATA_ROOT, "T1w", "T1w.nii.gz")
 FUNC_DIR = op.join(DATA_ROOT, "fMRI", "tfMRI_LANGUAGE_LR")
 FUNC_PATH = op.join(FUNC_DIR, "tfMRI_LANGUAGE_LR.nii.gz")
