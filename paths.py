@@ -1,7 +1,7 @@
 import os
 import os.path as op
 
-# Folder of this file (= the code folder)
+# Folder of this file
 REPO_DIR = op.dirname(op.abspath(__file__))
 
 # Data1 can be inside the code folder or next to it
