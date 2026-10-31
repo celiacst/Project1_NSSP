@@ -1,19 +1,10 @@
-# Project1_NSSP – NX-421 mini-project (HCP language task)
+# NX-421 Mini-project 1 - Group AC
 
-## Files
-| File | What | Tasks |
-|---|---|---|
-| `paths.py` | All paths, in one place | – |
-| `utils.py` | Lab helpers (FSL, FSLeyes) | – |
-| `1_preprocessing.ipynb` | Structural + functional preprocessing | 1.1, 1.2 |
-| `2_glm.ipynb` | Design matrix, GLM, contrasts, networks | 1.3 |
-| `3_<pca/ica/kmeans>.ipynb` | Part 2 (to do) | Part 2 |
+Run the notebooks in this order:
+1. `01_preprocessing.ipynb`: structural and functional preprocessing (Part 1, questions 1 and 2)
+2. `02_glm.ipynb`: design matrix, GLM and contrasts (Part 1, question 3)
+3. `03_pca.ipynb`: PCA (Part 2, variant 1)
 
-Run the notebooks **in this order**. The data must be in `Data1/` (inside this folder or next to it), with `Data1/T1/T1w.nii.gz` and `Data1/fMRI/tfMRI_LANGUAGE_LR/...`.
+`paths.py` contains all the paths used in the notebooks, and `utils.py` contains the helper functions from the labs.
 
-## Rules for the group
-1. `git pull` **before** starting to work.
-2. One person per notebook at a time (say it in the group chat) – notebooks can't be merged.
-3. Before pushing: **Edit → Clear Outputs of All Cells**, save, then `git add` / `commit` / `push`.
-4. Never push data, `.nii.gz`, `figures/` or `results/` (they are in `.gitignore`).
-5. Python goes in notebooks, never in the terminal (typing `import ...` in a terminal creates huge screenshot files).
+The data are not included. Put the `Data1` folder (with `T1/` and `fMRI/`) inside this folder or next to it.
