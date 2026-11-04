@@ -9,4 +9,26 @@ The FSLeyes cells (`fsleyesDisplay`) are only used for visual quality control an
 
 `paths.py` contains all the paths used in the notebooks, and `utils.py` contains the helper functions from the labs.
 
-The data are not included. Put the `Data1` folder (with `T1/` and `fMRI/`) inside this folder or next to it.
+The data are not included in this repository. Place the `Data1` folder **next to** the repository folder (at the same level as `Project1_NSSP`), not inside it:
+
+```
+parent_folder/
+├── Data1/
+│   ├── T1/
+│   │   └── T1w.nii.gz
+│   ├── fMRI/
+│   │   └── tfMRI_LANGUAGE_LR/ 
+│   └── derivatives/                  # created automatically by 01_preprocessing.ipynb
+│       └── preprocessed_data/
+│           ├── anat/
+│           └── func/
+└── Project1_NSSP/
+    ├── paths.py
+    ├── 01_preprocessing.ipynb
+    ├── 02_glm.ipynb
+    ├── 03_pca.ipynb
+    ├── figures/                      # created when running the notebooks
+    └── results/                      # created when running the notebooks
+```
+
+All paths are defined in `paths.py`, relative to the repository folder. The folders `derivatives/`, `figures/` and `results/` are created when the notebooks are run, in the order 01, 02, 03.
